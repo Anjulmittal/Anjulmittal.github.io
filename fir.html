@@ -1,0 +1,96 @@
+<!DOCTYPE html><html>
+<head>
+<meta charset="UTF-8">
+<title>TATA AIRLINES</title>
+<style>
+.ticketBooking {
+border: 3px outset black;
+background-color:  lightblue;
+text-align:center;
+height: 32px;
+width:180px;
+margin:auto;
+font-size:25px;
+opacity:0.8;
+}
+.fom{
+border: 2px solid black;
+text-align:center-left;
+height: 520px;
+width:300px;
+padding:12px;
+margin:auto;
+background-color:#d6cbd3;
+opacity:0.72;
+position:relative;
+}
+body {
+  background-image: url('back.jpg');
+}
+</style>
+</head>
+
+<body>
+<div class="ticketBooking">
+<label id='title'>Ticket Booking </lable></div>
+<br>
+<br>
+<div class="fom">
+<form action="link">
+
+  <label for="PNRNo">PNR No. : </lable>
+  <br>
+  <br>
+  <input type="text" id="TravelDate" size="30"><br>
+  <br>
+  <label for="TravelDate">Travel Date : </lable>
+  <br>
+  <br>
+  <input type="date" id="start"  min="2021-01-01" 
+  max="2021-12-31" size="25"><br>
+  <br>
+  <label for="Source">Source Airport : </lable>
+  <br>
+  <br>
+  <input type="text" id="Source" size="30"><br>
+  <br>
+  <label for="Destination">Destination Airport : </lable>
+  <br>
+  <br>
+  <input type="text" id="Destination" size="30"><br>
+  <br>
+  <br>
+  <label for="Status">Ticket Status  :   </lable>
+  
+  <select id="status" name="Status" style="width:100px">
+  <option value="New" >New</option>
+  <option value="Confirm" >Confirm</option>
+  <option value="Hold" >Hold</option>
+  </select>
+  <br>
+  <br>
+  <br>
+  <label for="Seat">Seat Preference :  </lable>
+  
+  <select id="seat" name="Seat" style="width:100px">
+  <option value="Window" >Window</option>
+  <option value="Middle" >Middle</option>
+  <option value="Aisle" >Aisle</option>
+  </select>
+  <br>
+  <br>
+  <br>
+  <label for="Meal">Meal Preference  :</lable>
+  
+  <select id="meal" name="Meal" style="width:100px">
+  <option value="Veg">Veg</option>
+  <option value="Non Veg">Non Veg</option>
+  </select>
+  <br>
+  <br>
+  <br>
+  <input type="submit" id="Submit" size="15" style="margin-left:110px;color:white;background-color:black;border:2px solid #336600;padding:3px;" value="Book Ticket" ><br>
+  </div>
+  </form>
+</body>
+</html>
